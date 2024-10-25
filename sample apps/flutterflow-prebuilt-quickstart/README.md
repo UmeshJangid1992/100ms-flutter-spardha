@@ -73,8 +73,4 @@ This can be solved by updating to the higher version of the package. For example
 
 Flutterflow uses `go_router` whereas `hms_room_kit` uses `MaterialPageRoute` for navigation. So, you might face issues while navigating from app screen to `hms_room_kit` screen. To solve this, you will need to use `MaterialPageRoute` while pushing the `hms_room_kit` path while you can continue using `go_router` for other paths.
 
-That's it. You can now use the amazing Prebuilt UI with speed of flutterflow in your application.
-
-If you face any issues or have any questions, please reach out to us on [Discord](https://discord.gg/jD94Fp74Ea)
-
-
+That's it. You can now use the amazing Prebuilt UI with speed of Flutterflow in your application.

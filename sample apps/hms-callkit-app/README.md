@@ -75,4 +75,3 @@ The repo already contains a `functions` folder which has the firebase functions 
 
 That's it you are all set for running the application.
 
-Have any issues. Please reach out to us over [discord](https://100ms.live/discord)

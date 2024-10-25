@@ -93,13 +93,6 @@ class _AppSettingsBottomSheetState extends State<AppSettingsBottomSheet> {
     AppDebugConfig.isVirtualBackgroundEnabled = isVirtualBackgroundEnabled;
   }
 
-  Future<void> _launchUrl() async {
-    final Uri _url = Uri.parse('https://discord.gg/YtUqvA6j');
-    if (!await launchUrl(_url, mode: LaunchMode.externalApplication)) {
-      throw 'Could not launch $_url';
-    }
-  }
-
   void setAudioMode(HMSAudioMode newMode) {
     currentAudioMode = newMode;
     setState(() {});
@@ -525,26 +518,6 @@ class _AppSettingsBottomSheetState extends State<AppSettingsBottomSheet> {
                   //           letterSpacing: 0.25,
                   //           fontWeight: FontWeight.w600),
                   //     )),
-                  ListTile(
-                    horizontalTitleGap: 2,
-                    enabled: true,
-                    onTap: _launchUrl,
-                    contentPadding: EdgeInsets.zero,
-                    leading: SvgPicture.asset(
-                      'packages/hms_room_kit/lib/src/assets/icons/bug.svg',
-                      colorFilter:
-                          ColorFilter.mode(themeDefaultColor, BlendMode.srcIn),
-                    ),
-                    title: Text(
-                      "Ask on Discord",
-                      semanticsLabel: "fl_ask_feedback",
-                      style: HMSTextStyle.setTextStyle(
-                          fontSize: 14,
-                          color: themeDefaultColor,
-                          letterSpacing: 0.25,
-                          fontWeight: FontWeight.w600),
-                    ),
-                  ),
                   SizedBox(
                     height: 30,
                     child: ListTile(
